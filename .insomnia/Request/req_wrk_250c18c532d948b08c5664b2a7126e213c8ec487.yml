@@ -1,0 +1,24 @@
+_id: req_wrk_250c18c532d948b08c5664b2a7126e213c8ec487
+type: Request
+parentId: fld_wrk_250c18c532d948b08c5664b2a7126e21a0f7e779
+modified: 1619788174875
+created: 1619788174875
+url: "{{ base_url }}/goodbye"
+name: /goodbye
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1619788174875
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

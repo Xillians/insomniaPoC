@@ -1,0 +1,24 @@
+_id: req_wrk_250c18c532d948b08c5664b2a7126e21aaf4c61d
+type: Request
+parentId: fld_wrk_250c18c532d948b08c5664b2a7126e21a0f7e779
+modified: 1619787912338
+created: 1619787912338
+url: "{{ base_url }}/hello"
+name: /hello
+description: ""
+method: GET
+body: {}
+parameters:
+  - name: name
+    disabled: true
+    value: string
+headers: []
+authentication: {}
+metaSortKey: -1619787912338
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

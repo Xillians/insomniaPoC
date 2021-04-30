@@ -1,0 +1,57 @@
+_id: req_fa26585c93c24b21be420b65aa76306f
+type: Request
+parentId: fld_2b27a59aa22548ee8844ea7d9ca1b7d5
+modified: 1619782411467
+created: 1619782385496
+url: "{{ _.baseUrl }}/psp/creditcard/payments"
+name: create payment
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+        "payment": {
+            "operation": "Purchase",
+            "intent": "Authorization",
+            "currency": "SEK",
+            "prices": [
+                {
+                    "type": "CreditCard",
+                    "amount": 10000,
+                    "vatAmount": 0
+                }
+            ],
+            "description": "some description",
+            "userAgent": "Mozilla/5.0 Postman",
+            "language": "sv-SE",
+            "urls": {
+            	"hostUrls": [
+            		"https://en.wikipedia.org/wiki/Host"
+        		],
+                "completeUrl": "https://en.wikipedia.org/wiki/Success",
+                "cancelUrl": "https://en.wikipedia.org/wiki/cancel"
+            },
+            "payeeInfo": {
+                "payeeId": "{{ _.merchant.id }}",
+                "payeeReference": "1619772915"
+            }
+        },
+        "creditCard": {}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_139d4b44d8294bd0a0554111440118db
+authentication:
+  type: bearer
+  token: "{{ _.merchant.token }}"
+metaSortKey: -1619782385496
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
